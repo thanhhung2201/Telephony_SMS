@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="50dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sending SMS Example"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorials point "
+        android:textColor="#ff87ff09"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="207dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/abc" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPhoneNumber"
+        android:hint="Enter Phone Number"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtContent"
+        android:layout_below="@+id/txtPhoneNumber"
+        android:layout_alignLeft="@+id/txtPhoneNumber"
+        android:layout_alignStart="@+id/txtPhoneNumber"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:hint="Enter SMS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Sms"
+        android:id="@+id/btnSendSMS"
+        android:layout_below="@+id/txtContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>
